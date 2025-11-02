@@ -1,4 +1,5 @@
 # SQUARE AND CUBE OF A NUMBER
+---
 # 8051 Square  Program
 
 ## AIM
@@ -15,24 +16,25 @@ To write and execute an Assembly language program for finding the square of a gi
 4. The output square value is stored in Port 2 (P2).
 
 ## PROGRAM
-```
-
-
-
-
-
-
-
-
-
+```asm
+MOV A,P0 
+MOV R0,A 
+MOV B,R0 
+MUL AB 
+MOV P2,A 
+END
 ```
 
 ## OUTPUT
+<img width="536" height="324" alt="Screenshot 2025-10-27 104530" src="https://github.com/user-attachments/assets/dbb0a874-d3b1-4b5a-bae0-7558bd2272cb" />
+
+![WhatsApp Image 2025-11-02 at 16 37 55_26d0fdd9](https://github.com/user-attachments/assets/268b0bff-21ec-4e5a-896b-f73163ada996)
 
 
 ## RESULT
 Thus, the square of the given data is calculated using 8051 Keil.
 
+---
 # 8051 Cube  Program
 
 ## AIM
@@ -49,19 +51,22 @@ To write and execute an Assembly language program for finding the cube of a give
 4. The output cube value is stored in a memory location.
 
 ## PROGRAM
+```asm
+MOV A, P0
+MOV B, A
+MUL AB
+MOV R0, A
+MOV A, R0
+MOV B, P0
+MUL AB
+MOV P2, A
+END
 ```
-
-
-
-
-
-
-
-
-```
-
 
 ## OUTPUT
+<img width="439" height="320" alt="Screenshot 2025-11-02 151645" src="https://github.com/user-attachments/assets/04b62ba6-2472-4be9-a62e-20399ab8c62b" />
+
+![WhatsApp Image 2025-11-02 at 16 33 36_1172d36f](https://github.com/user-attachments/assets/75bc9f38-59a5-42bd-9602-d122d4d81d0b)
 
 ## RESULT
 Thus, the cube of the given data is calculated using 8051 Keil.
